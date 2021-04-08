@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body {
+  width: 100%;
+  height: 200vh;
+}
+
+header {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  margin-left: 10%;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.logo h2 {
+  letter-spacing: -1px;
+}
+
+.logphone {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+}
+
+.login {
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+svg {
+  opacity: 0.6;
+  margin: 8px;
+}
+
+.login a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login .sign-up {
+  margin: 0 1rem;
+  background-color: black;
+  color: #dbb341;
+  padding: 0.2rem 0.8rem;
+  border-radius: 100vmax;
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em;
+  margin-right: 1rem;
+}
+
+.phone p {
+  font-weight: 700;
+}
+
+.phone .work-horaire {
+  margin: 0 0.5rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  margin: 0 0.4rem;
+}
+
+.nav-bar a span {
+  color: white;
+}
+
+main {
+  width: 100%;
+  height: 110vh;
+  background: linear-gradient(45deg, #ffcc35, #ff7300);
+  border-bottom-left-radius: 60px;
+  padding: 20vh 15vw;
+  box-shadow: -50px 50px 50px #f2e6b2;
+}
+
+main h1 {
+  font-size: 5rem;
+  color: white;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+}
+
+main h3 {
+  font-size: 2rem;
+}
+
+.browse {
+  margin: 2rem 0;
+}
+
+.browse a {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.check {
+  color: black;
+}
+
+.check svg {
+  color: black;
+  opacity: 1;
+  position: relative;
+  top: 0.6rem;
+  right: 5px;
+}
+
+.how {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  background-color: black;
+  padding: 0.5rem 1.2rem;
+  border-radius: 100vmax;
+}
