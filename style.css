@@ -109,7 +109,7 @@ main {
   background: linear-gradient(45deg, #ffcc35, #ff7300);
   border-bottom-left-radius: 60px;
   padding: 20vh 15vw;
-  box-shadow: -50px 50px 50px #f2e6b2;
+  box-shadow: -50px 50px 50px #f2ccb2, 0px 50px 50px #f2ccb2;
   position: relative;
 }
 
