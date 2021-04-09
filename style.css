@@ -17,6 +17,7 @@ header {
   display: flex;
   margin-left: 10%;
   justify-content: space-between;
+  z-index: 100;
 }
 
 .logo {
@@ -109,6 +110,7 @@ main {
   border-bottom-left-radius: 60px;
   padding: 20vh 15vw;
   box-shadow: -50px 50px 50px #f2e6b2;
+  position: relative;
 }
 
 main h1 {
@@ -152,6 +154,12 @@ main h3 {
   border-radius: 100vmax;
 }
 
+.search {
+  position: absolute;
+  width: 72vw;
+  top: calc(100vh - 3rem);
+}
+
 .options {
   display: flex;
 }
@@ -183,9 +191,14 @@ main h3 {
   color: white;
 }
 
+.forms {
+  position: relative;
+}
+
 .form {
+  position: absolute;
+  width: 100%;
   padding: 1.7rem;
-  display: block;
   background-color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -196,9 +209,9 @@ main h3 {
 .select,
 .location,
 .searchBtn {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   border: none;
-  padding: 0.2rem 1rem;
+  padding: 0.4rem 1rem;
 }
 
 .select,
@@ -213,4 +226,10 @@ main h3 {
 
 .select {
   color: #888;
+}
+.searchBtn {
+  background-color: #01a23b;
+  color: white;
+  border-radius: 5px;
+  padding: 0.2rem 2rem;
 }
