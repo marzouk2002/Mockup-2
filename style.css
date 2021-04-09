@@ -151,3 +151,66 @@ main h3 {
   padding: 0.5rem 1.2rem;
   border-radius: 100vmax;
 }
+
+.options {
+  display: flex;
+}
+
+.option {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.6rem 1.5rem;
+  background-color: white;
+  margin-right: 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px -3px #ff7300;
+  cursor: pointer;
+}
+
+.desc {
+  margin: auto 0 auto auto;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.desc p a {
+  color: black;
+}
+.option.active {
+  background-color: #ff7300;
+  color: white;
+}
+
+.form {
+  padding: 1.7rem;
+  display: block;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.keywords,
+.select,
+.location,
+.searchBtn {
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.2rem 1rem;
+}
+
+.select,
+.location {
+  background-color: #eeede8c0;
+  width: 27.5%;
+}
+
+.keywords::placeholder {
+  color: black;
+}
+
+.select {
+  color: #888;
+}
