@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="./style.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./app.js"></script>
     <title>mockup 2</title>
 </head>
 <body>
@@ -48,34 +49,42 @@
         </div>
         <div class="search">
             <div class="options">
-                <div class="option"><p>Find a job</p></div>
-                <div class="option active"><p>Find a candidate</p></div>
+                <div id="jobBtn" class="option active"><p>Find a job</p></div>
+                <div id="candiBtn" class="option"><p>Find a candidate</p></div>
                 <div class="desc"><p>we have 69.368 job offers for you! Browse job offers by <a href="#">Category</a></p></div>
             </div>
             <div class="forms">
-                <form class="form active">
-                    <input type="text" class="keywords" placeholder="Keywords">
-                    <select class="select">
-                        <option value="All Specialisms">All Specialisms</option>
-                        <option value="All Specialisms">All Specialisms</option>
-                        <option value="All Specialisms">All Specialisms</option>
-                    </select>
+                <form id="forJob" class="form active">
+                    <div id="keyword-input"><input type="text" class="keywords" placeholder="KeywordsT"></div>
+                    <div id="select-input">
+                        <select class="select">
+                            <option value="All Specialisms">All Specialisms</option>
+                            <option value="All Specialisms">All Specialisms</option>
+                            <option value="All Specialisms">All Specialisms</option>
+                        </select>
+                    </div>
                     <input type="text" class="location" placeholder="All locations">
                     <button type="submit" class="searchBtn">search</button>
                 </form>
-                <form class="form">
-                    <input type="text" class="keywords" placeholder="Keywords">
-                    <select class="select">
-                        <option value="All Specialisms">All Specialisms</option>
-                        <option value="All Specialisms">All Specialisms</option>
-                        <option value="All Specialisms">All Specialisms</option>
-                    </select>
+                <form id="forCandida" class="form" >
+                    <div id="keyword-input"><input type="text" class="keywords" placeholder="Keywords"></div>
+                    <div id="select-input">
+                        <select class="select">
+                            <option value="All Specialisms">All Specialisms</option>
+                            <option value="All Specialisms">All Specialisms</option>
+                            <option value="All Specialisms">All Specialisms</option>
+                        </select>
+                    </div>
                     <input type="text" class="location" placeholder="All locations">
                     <button type="submit" class="searchBtn">search</button>
                 </form>
             </div>
         </div>
     </main>
+    <footer>
+        <h3>Brows Jobs by Specialism</h3>
+        <p>Consectetuer adispiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+    </footer>
     
 </body>
 </html>
