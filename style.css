@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
+  text-align: center;
 }
 body {
   width: 100%;
@@ -64,6 +65,7 @@ svg {
   color: #dbb341;
   padding: 0.2rem 0.8rem;
   border-radius: 100vmax;
+  white-space: nowrap;
 }
 
 .phone {
@@ -109,7 +111,6 @@ main {
   border-bottom-left-radius: 60px;
   padding: 20vh 15vw;
   box-shadow: -60px 60px 60px #ffe7b1, 0px 60px 60px #ffe7b1;
-  position: relative;
 }
 
 main h1 {
@@ -117,10 +118,12 @@ main h1 {
   color: white;
   line-height: 5rem;
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 main h3 {
   font-size: 2rem;
+  text-align: left;
 }
 
 .browse {
@@ -247,6 +250,7 @@ main h3 {
   left: 0;
   top: 200%;
   color: #999;
+  display: block;
   font-size: 0.8rem;
 }
 
@@ -281,4 +285,13 @@ footer h3 {
 
 footer p {
   color: #666;
+}
+
+a {
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+a:hover {
+  letter-spacing: 2px;
 }
