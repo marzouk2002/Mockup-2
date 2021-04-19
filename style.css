@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
-  text-align: center;
 }
 body {
   width: 100%;
@@ -177,6 +176,7 @@ main h3 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   box-shadow: 0px -3px #ff7300;
+  text-align: center;
   cursor: pointer;
   background-color: #ff7300;
   color: white;
@@ -187,6 +187,7 @@ main h3 {
   color: white;
   font-size: 0.9rem;
   font-weight: 700;
+  text-align: center;
 }
 .desc p a {
   color: black;
@@ -208,7 +209,13 @@ main h3 {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  height: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 0.5fr;
+  grid-gap: 1rem;
+}
+
+.form > * {
+  width: 100%;
 }
 
 .form.active {
@@ -222,36 +229,13 @@ main h3 {
   font-size: 1.3rem;
   border: none;
   padding: 0.4rem 1rem;
+  height: 3rem;
+  width: 100%;
 }
 
 .select,
 .location {
-  background-color: #eeede8c0;
-  width: 27.5%;
-}
-#keyword-input,
-#select-input {
-  display: inline;
-  position: relative;
-}
-
-#keyword-input::after {
-  content: '* Search keywords e.g web design';
-}
-
-#select-input::after {
-  content: '* Filter by specialisms e.g developer design';
-  color: black;
-}
-
-#keyword-input::after,
-#select-input::after {
-  position: absolute;
-  left: 0;
-  top: 200%;
-  color: #999;
-  display: block;
-  font-size: 0.8rem;
+  background-color: #ddd;
 }
 
 .keywords::placeholder {
@@ -261,11 +245,16 @@ main h3 {
 .select {
   color: #888;
 }
+
 .searchBtn {
   background-color: #01a23b;
   color: white;
   border-radius: 5px;
-  padding: 0.2rem 2rem;
+}
+
+.details {
+  color: #555;
+  font-size: 0.8rem;
 }
 
 footer {
