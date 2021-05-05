@@ -113,15 +113,15 @@ main {
 }
 
 main h1 {
-  font-size: 5rem;
+  font-size: calc(2rem + 4vw);
   color: white;
-  line-height: 5rem;
+  line-height: calc(2rem + 4vw);
   margin-bottom: 2rem;
   text-align: left;
 }
 
 main h3 {
-  font-size: 2rem;
+  font-size: calc(1rem + 1.5vw);
   text-align: left;
 }
 
@@ -136,6 +136,7 @@ main h3 {
 
 .check {
   color: black;
+  display: inline;
 }
 
 .check svg {
