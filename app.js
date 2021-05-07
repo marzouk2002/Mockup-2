@@ -12,3 +12,7 @@ $('#candiBtn').click(()=> {
     $('#forCandida').addClass('active')
     $('#candiBtn').addClass('active')
 })
+$('.menu').click(() => {
+    $('.nav').toggleClass('active')
+    $('.fa-chevron-down').toggleClass('active')
+})

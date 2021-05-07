@@ -22,8 +22,8 @@ header {
 .logo {
   color: white;
   background-color: black;
-  padding: 0.5rem 1rem;
-
+  padding: 0.5rem 1.8rem;
+  z-index: 10;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -39,15 +39,17 @@ header {
 }
 
 .login {
-  margin: 0 1rem;
+  margin: 0 1vmin;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-svg {
+i {
   opacity: 0.6;
-  margin: 8px;
+  margin: 4px;
+  font-size: 1.2rem;
+  display: flex;
 }
 
 .login a {
@@ -59,7 +61,7 @@ svg {
 }
 
 .login .sign-up {
-  margin: 0 1rem;
+  margin: 0 1vmin;
   background-color: black;
   color: #dbb341;
   padding: 0.2rem 0.8rem;
@@ -85,6 +87,9 @@ svg {
   color: #888;
   font-weight: 400;
 }
+.nav {
+  display: flex;
+}
 
 .nav-bar {
   display: flex;
@@ -93,10 +98,15 @@ svg {
   width: 40vw;
 }
 
+.menu {
+  display: none;
+}
+
 .nav-bar a {
   text-decoration: none;
   color: black;
   font-weight: 600;
+  padding: 1.1rem 0;
   margin: 0 0.4rem;
 }
 
@@ -137,16 +147,16 @@ main h3 {
 
 .check {
   color: black;
-  display: inline;
   white-space: nowrap;
 }
 
-.check svg {
+.check i {
+  position: absolute;
   color: black;
+  display: inline;
   opacity: 1;
-  position: relative;
-  top: 0.6rem;
-  right: 5px;
+  margin-left: 0;
+  transform: translateY(-25%);
 }
 
 .how {
@@ -242,7 +252,7 @@ main h3 {
 }
 
 .keywords::placeholder {
-  color: black;
+  color: #222;
 }
 
 .select {
@@ -295,6 +305,65 @@ a:hover {
     margin-left: 5%;
     width: 95%;
   }
+
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+    position: absolute;
+    transform: translateY(-74%);
+    transition: 0.5s ease-out transform;
+  }
+  .nav-bar {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    background-image: linear-gradient(-45deg, #ffcc35, #ff7300);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 10;
+    padding: 0 0.48rem;
+    padding-top: 2.5rem;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    background-color: white;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1.8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    top: -1.2rem;
+    cursor: pointer;
+    transition: font-size 0.3s;
+  }
+
+  .fa-chevron-down {
+    color: black;
+    font-weight: 700;
+    opacity: 1;
+    transition: 0.5s ease-out transform;
+  }
+
+  .menu:hover {
+    font-size: 1.2rem;
+  }
+
+  .fa-chevron-down.active {
+    transform: rotate(-180deg);
+  }
+
+  .nav.active {
+    transform: translateY(0%);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -315,6 +384,27 @@ a:hover {
     margin-left: 0%;
     width: 100%;
   }
+
+  .options {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .options > div:nth-child(3) {
+    margin: 0;
+    text-align: center;
+    padding: 0.8rem;
+    grid-area: 1/1/2/3;
+  }
+
+  .options > div:nth-child(1) {
+    grid-area: 2/1/3/2;
+  }
+
+  .options > div:nth-child(2) {
+    grid-area: 2/2/3/3;
+  }
 }
 
 @media (max-width: 650px) {
@@ -324,7 +414,7 @@ a:hover {
   }
 
   footer {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
