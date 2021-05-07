@@ -327,6 +327,11 @@ a:hover {
     padding-top: 2.5rem;
   }
 
+  .nav-bar a:hover {
+    transform: scale(1.2);
+    letter-spacing: normal;
+  }
+
   .menu {
     display: flex;
     justify-content: center;
@@ -419,5 +424,9 @@ a:hover {
     align-items: center;
     justify-content: flex-end;
     padding-bottom: 5vh;
+  }
+
+  .work-horaire {
+    display: none;
   }
 }
